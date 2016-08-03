@@ -1,6 +1,6 @@
 {
-    "name": "codingmatters/account-manager",
-    "type": "library",
+    "name": "codingmatters/account-manager-module",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
@@ -11,7 +11,8 @@
     ],    
     "require": {
         "php": "^7.0",
-        "roave/security-advisories": "dev-master"
+        "roave/security-advisories": "dev-master",
+	"codingmatters/account-manager-service-repository": "^1.0 || ~0.1"
     },
     "require-dev": {
 	"zendframework/zend-test": "^3.0.1",
@@ -21,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "CodingMatters\\AccountManager\\": "src/"
+            "CodingMatters\\AccountManager\\Ui": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CodingMattersTest\\AccountManager\\": "test/"
+            "CodingMattersTest\\AccountManager\\Ui": "test/"
         }
     },
     "extra": {
